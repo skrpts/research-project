@@ -2,8 +2,8 @@
 id: "f00682b9-1279-4b4f-ae60-8ff3fb62eea0"
 name: "research-project"
 display_name: "Research Project"
-description: "A project type that starts with the pipelines research work repeats: surveying the literature, capturing notes, synthesising evidence, managing citations and preparing for peer review"
-version: "1.0.0"
+description: "A project type that starts with the pipelines research work repeats: surveying the literature, synthesising evidence, managing citations and preparing for peer review"
+version: "1.0.1"
 engine: ">=0.1.0"
 author:
   name: "skrptiq"
@@ -45,15 +45,10 @@ project:
   preamble: "documents/research-project-preamble.md"
   skrpts:
     - slug: "literature-review-pipeline"
-      version: "1.2.30"
-      content_digest: "sha256:b4fe0118915de88b527ceeefc5129733d7b398e06b0fe589411899cc785181f5"
+      version: "1.2.33"
+      content_digest: "sha256:ad768badee801ba9718c6150d4cadafa6c88242a37aeb08145c6c7fc038e50eb"
       role: required
       why: "Survey the existing literature and map what is already known"
-    - slug: "note-taking-pipeline"
-      version: "1.1.26"
-      content_digest: "sha256:6cb49f61e7d486fca57a8e41ad61e8e42e26790ecbf307fdd71843bd7751223f"
-      role: required
-      why: "Capture structured notes while reading, rather than after"
     - slug: "systematic-review-pipeline"
       version: "1.1.28"
       content_digest: "sha256:3a97881ba81d3e246e187d4b9c073234c9ecda347a3384789fe7ecd3c3f26053"
@@ -82,7 +77,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-10-16T20:31:56.585Z"
+  scanned_at: "2026-10-18T11:03:46.090Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

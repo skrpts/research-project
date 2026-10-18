@@ -1,5 +1,16 @@
 # Release Notes
 
+## v1.0.1
+Removed the note-capture pipeline from this template, and re-pinned the literature review pipeline to a version that works.
+
+The literature review pipeline was pinned to a release whose content had not caught up with its fixes: one step used a step type the engine does not run, so it would have failed partway rather than completing. The fixed version is now published and this template points at it.
+
+It promised structured notes from readings, and the stage that handles readings could not run — so the template was recommending a package that would not do the thing it was included for. Rather than ship it and explain the gap, it is out until it works.
+
+Note capture belongs in a research project and a stage for it will return once it is ready to do the job.
+
+The other four are unchanged: literature review and citation management are required, the systematic review and peer-review preparation are optional.
+
 ## v1.0.0
 First release — the Research Project template.
 
