@@ -1,5 +1,14 @@
 # Release Notes
 
+## v1.0.2
+GH#1133 — re-pin all 4 members to the versions the consumer wave produced. The template pins each member by `version` AND `content_digest`, and catalogue versions are immutable, so the old pins kept resolving and their digests kept verifying: **installs succeeded and delivered pre-wave members**. The flagship Projects experience would have gone on shipping the exact defect the wave removed, indefinitely, because the pins predate it.
+
+`literature-review-pipeline` 1.2.33 → 1.2.34, `systematic-review-pipeline` 1.1.28 → 1.1.29, `citation-management-flow` 1.1.26 → 1.1.27, `peer-review-preparation-flow` 1.1.34 → 1.1.36.
+
+`citation-management-flow` was listed as outside the wave and had still moved by a patch, so it was re-pinned on the same evidence as the rest: what the catalogue serves, not what the batch manifest said.
+
+Digests are the catalogue's own `contentHash` for each new version, read from `/api/skrpts/<slug>` rather than recomputed.
+
 ## v1.0.1
 Removed the note-capture pipeline from this template, and re-pinned the literature review pipeline to a version that works.
 
