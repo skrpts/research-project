@@ -3,7 +3,7 @@ id: "f00682b9-1279-4b4f-ae60-8ff3fb62eea0"
 name: "research-project"
 display_name: "Research Project"
 description: "A project type that starts with the pipelines research work repeats: surveying the literature, synthesising evidence, managing citations and preparing for peer review"
-version: "1.0.2"
+version: "1.0.4"
 engine: ">=0.1.0"
 author:
   name: "skrptiq"
@@ -50,18 +50,18 @@ project:
       role: required
       why: "Survey the existing literature and map what is already known"
     - slug: "systematic-review-pipeline"
-      version: "1.1.29"
-      content_digest: "sha256:989826cf2d93991677efedea033471823b4252b492a38e029d636f2bda4358de"
+      version: "1.1.31"
+      content_digest: "sha256:4ce1219373addac18fe4247076be17ce6115a3fce205bef59f1e35035e85d742"
       role: optional
       why: "Synthesise evidence to a stated protocol, when the method calls for it"
     - slug: "citation-management-flow"
-      version: "1.1.27"
-      content_digest: "sha256:b05de74b58c53d7b7a86cb8dd97b5e5b5dc0dc38139bdc7c027148d0f96e8f1c"
+      version: "1.1.28"
+      content_digest: "sha256:dc3282403aae252f6bf0979bce2a45f59b081159e3a71ee6e09abd85d7366c7f"
       role: required
       why: "Keep references consistent and check them against the text"
     - slug: "peer-review-preparation-flow"
-      version: "1.1.36"
-      content_digest: "sha256:26cf090f739f4ac381c634748c68b8af1f6f20602bbddef981d8884c1ebf8b98"
+      version: "1.1.38"
+      content_digest: "sha256:a1746e67a63d2ddcbbca7b88a24616973e95751a28edc22121864634b0ee2a15"
       role: optional
       why: "Prepare a manuscript for submission and anticipate reviewer objections"
 
@@ -77,7 +77,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-11-01T19:09:57.707Z"
+  scanned_at: "2026-11-15T20:45:43.256Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

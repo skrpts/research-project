@@ -1,5 +1,25 @@
 # Release Notes
 
+## v1.0.4
+Three of this project's four skrpts were pinned to superseded versions. Installing the project delivered those older versions, not the fixed ones.
+
+The members have since been repaired and published, and the project you could install still named the versions from before those repairs — so a fresh install of **Research Project** succeeded and handed you three skrpts with known faults:
+
+  `systematic-review-pipeline` installed at 1.1.29, which predates the pipeline's first stage. Research Question Refinement did not run, and the stage after it built a search strategy without the refined question it is meant to follow from. Now 1.1.31.
+  `peer-review-preparation-flow` installed at 1.1.36, which carried a duplicate declaration of the reviewer-response stage that ran nothing. Now 1.1.38.
+  `citation-management-flow` installed at 1.1.27. Now 1.1.28.
+
+`literature-review-pipeline` was already current at 1.2.34 and is unchanged.
+
+Nothing about the project's shape changes — same four skrpts, same order, same roles. Only the versions it installs.
+
+## v1.0.3
+GH#1133 — re-pin `citation-management-flow`, `peer-review-preparation-flow` after the GH#1143 publishes moved them.
+
+This is the second re-pin today and the reason is structural, not an oversight: `citation-management-flow`, `peer-review-preparation-flow` also carry a `default_from_previous` declaration, so publishing the deletion bumped their version and staled this template's pin the moment it landed. **Any member publish staleds any template that pins it, and nothing fails when it does** — the install keeps succeeding and serves the superseded body, which is the condition GH#1133 exists for.
+
+Digests read from `/api/skrpts/<slug>` for each new version, as before. Members verified served before re-pinning — a pin written against an unfinished publish points at something nobody can install.
+
 ## v1.0.2
 GH#1133 — re-pin all 4 members to the versions the consumer wave produced. The template pins each member by `version` AND `content_digest`, and catalogue versions are immutable, so the old pins kept resolving and their digests kept verifying: **installs succeeded and delivered pre-wave members**. The flagship Projects experience would have gone on shipping the exact defect the wave removed, indefinitely, because the pins predate it.
 
